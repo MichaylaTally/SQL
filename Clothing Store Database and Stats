@@ -1,0 +1,46 @@
+
+***Check out my store database HERE***
+***First I created a store database***
+
+CREATE TABLE ClothingStore (Id INTEGER PRIMARY KEY, Item TEXT, Size TEXT, Price INTEGER, Sale TEXT);
+
+INSERT INTO ClothingStore VALUES
+(1,"Skinny Jean", "medium", 17.99,"Yes");
+INSERT INTO ClothingStore VALUES
+(2,"Short Sleeve Shirt", "small", 8.99, "Yes");
+INSERT INTO ClothingStore VALUES
+(3,"Long Sleeve Shirt", "small",10.99,"No");
+INSERT INTO ClothingStore VALUES
+(4,"Necklace", "Large", 4.99,"No");
+INSERT INTO ClothingStore VALUES
+(5,"Shorts", "Small", 25.00,"No");
+INSERT INTO ClothingStore VALUES
+(6,"Legging", "medium", 16.99,"No");
+INSERT INTO ClothingStore VALUES
+(7,"Jacket", "Large", 30.00,"No");
+INSERT INTO ClothingStore VALUES
+(8,"Earing", "medium", 2.00,"Yes");
+INSERT INTO ClothingStore VALUES
+(9,"Hat", "Large", 12.55,"No");
+INSERT INTO ClothingStore VALUES
+(10,"Tennis Shoe ", "Small", 60.00,"Yes");
+INSERT INTO ClothingStore VALUES
+(11,"Boots", "Large", 50.00,"Yes");
+INSERT INTO ClothingStore VALUES
+(12,"Belt", "Small", 20.19,"Yes");
+INSERT INTO ClothingStore VALUES
+(13,"Underwear", "Medium",9.00,"No");
+INSERT INTO ClothingStore VALUES
+(14,"Swimsuit", "Small", 13.99,"No");
+INSERT INTO ClothingStore VALUES
+(15,"Bra", "Medium", 7.99,"No");
+
+***Displayed the database by price***
+
+SELECT * FROM ClothingStore;
+ SELECT * FROM ClothingStore WHERE Price>=0
+ORDER BY Price asc;
+*** Added the price of the items together ***
+
+SELECT SUM(Price) FROM ClothingStore
+
